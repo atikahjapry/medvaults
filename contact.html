@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us – [Your Agency Name]</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="logo">[Your Agency Name]</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="pricing.html">Prices & Funding</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="careers.html">Careers</a>
+      <a href="blog.html">Resources</a>
+      <a href="contact.html" class="nav-cta active">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>No-obligation, confidential discussion about your care needs.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid two-col">
+      <div>
+        <h2>Get in touch</h2>
+        <p>Call us on <a href="tel:+44XXXXXXXXXX">+44 XX XXXX XXXX</a> or complete the form and we’ll get back to you.</p>
+        <p><strong>Email:</strong> <a href="mailto:info@youragency.com">info@youragency.com</a></p>
+        <p><strong>Address:</strong><br>[Address line 1]<br>[Town], [Postcode]</p>
+      </div>
+      <div>
+        <h2>Enquiry form</h2>
+        <form class="contact-form" action="#" method="post">
+          <label for="name">Name*</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="phone">Phone*</label>
+          <input type="tel" id="phone" name="phone" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+
+          <label for="message">How can we help?</label>
+          <textarea id="message" name="message" rows="5"></textarea>
+
+          <button type="submit" class="btn btn-primary">Send Enquiry</button>
+        </form>
+        <!-- To make the form work, configure server-side handling or use a form service. -->
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <strong>[Your Agency Name]</strong><br>
+      [Address line 1]<br>
+      [Town], [Postcode]
+    </div>
+    <div>
+      <p>Tel: <a href="tel:+44XXXXXXXXXX">+44 XX XXXX XXXX</a><br>
+      Email: <a href="mailto:info@youragency.com">info@youragency.com</a></p>
+    </div>
+    <div class="footer-small">
+      <p>&copy; <span id="year"></span> [Your Agency Name]. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
